@@ -1,0 +1,33 @@
+# Your task is to complete all these function's
+# function should append an element on to the stack
+def push(arr, ele):
+    # Code here
+    arr.append(ele)
+    return arr
+
+# Function should pop an element from stack
+def pop(arr):
+    # Code here
+    arr.pop()
+    return arr
+    
+
+# function should return 1/0 or True/False
+def isFull(n, arr):
+    # Code here
+    if n==len(arr):
+        return True
+    return False
+
+# function should return 1/0 or True/False
+def isEmpty(arr):
+    #Code here
+    return len(arr)==0
+
+# function should return minimum element from the stack
+def getMin(n, arr):
+    # Code here
+    if n==0:
+        return
+    if not isEmpty(arr):
+        return min(arr)
