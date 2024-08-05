@@ -1,0 +1,18 @@
+#User function Template for python3
+class Solution:
+    def twoOddNum(self, Arr, N):
+        # code here
+        
+        d=dict()
+        for i in Arr:
+            if i not in d:
+                d[i]=1
+            else:
+                d[i]+=1
+        x=[]
+        for k,v in d.items():
+            if v%2!=0:
+                x.append(k)
+        x.sort()
+        x=x[::-1]
+        return x
