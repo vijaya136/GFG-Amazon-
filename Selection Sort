@@ -1,0 +1,22 @@
+#User function Template for python3
+
+class Solution: 
+    def select(self, arr, i):
+        # code here 
+        minele=i
+        for j in range(minele+1,n):
+            if arr[j]<arr[minele]:
+                minele=j
+        return minele
+        
+    
+    def selectionSort(self, arr,n):
+        #code here
+        smalli=0
+        while smalli<n:
+            minele=self.select(arr,smalli)
+            if minele!=smalli:
+                arr[smalli],arr[minele]=arr[minele],arr[smalli]
+            
+            smalli+=1
+        return arr
