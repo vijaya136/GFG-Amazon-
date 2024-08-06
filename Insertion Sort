@@ -1,0 +1,18 @@
+class Solution:
+    def insert(self, alist, index, n):
+        #code here
+        pos=index
+        temp=alist[index+1]
+        while pos>=0 and temp<alist[pos]:
+            alist[pos+1]=alist[pos]
+            pos-=1
+        alist[pos+1]=temp
+        
+        
+    #Function to sort the list using insertion sort algorithm.    
+    def insertionSort(self, alist, n):
+        #code here
+        for i in range(1,n):
+            temp=alist[i]
+            pos=self.insert(alist,i-1,n)
+        return alist
